@@ -1,0 +1,23 @@
+A) Puntero salvaje
+   Se declaro el puntero pero nunca fue inicializado.
+   int* p = new int(42);
+
+B) Memory leak
+   Se reasigna el puntero sin haber liberado la memoria antes.
+   int* p = new int(10); delete p; p = new int(20);
+
+C) Puntero flotante
+   Se imprimite *p despues de haber liberado la memoria
+   eliminar el cout
+
+D) Indefinido
+   Se usa delete arr sin los corchetes
+   delete[] arr; arr = nullptr;
+
+E) Doble liberacion
+   p2 apunta a la misma direccion que p1 y tratamos de aun asi limpiar
+   eliminar delete p2
+
+F) Puntero colgante
+   Se retorna un puntero a una variable local x alojada en el stack
+   int* x = new int(99); return x;
