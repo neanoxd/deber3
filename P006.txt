@@ -1,0 +1,6 @@
+A: Si compila, tiene comportamiento indefinido ya que no sabemos a que 
+   está apuntando.
+B: Si compila y no tiene comportamiento indefinido.
+C: Compila con comportamiento indefinido ya que el el puntero ahora apunta a la
+   direccion de memoria 100 y no sabemos que hay ahí.
+D: Compila sin comportamiento errático.
